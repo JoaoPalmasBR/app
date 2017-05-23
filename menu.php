@@ -9,8 +9,8 @@
 			'<li>
 				<a>Conta</a>
 				<ul>
-					<li><a href="conta/">Dados</a></li>
-					<li><a href="sair">Sair</a></li>
+					<li><a href="';include 'servidor.php';echo 'conta/">Dados</a></li>
+					<li><a href="';include 'servidor.php';echo 'sair.php">Sair</a></li>
 				</ul>
 			</li>';
 	}
