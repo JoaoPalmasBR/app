@@ -1,22 +1,97 @@
-@media (min-width: 728px) {
+@media (min-width: 340px) {
+    *{
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+    }
+    body {
+        /*background-color: red;*/
+    }
 }
 /*Menu*/
-nav {
-    background-color: #333;
-    margin: 0;
-    overflow: hidden;
+    /*Principal*/
+    nav{
+        background-color: #333;
+        border: 1px solid #333;
+        color: #fff;
+        display: block;
+        margin: 0;
+        overflow: hidden;
+    }
+    nav ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+    }
+    nav ul li{
+        margin: 0;
+        display: inline-block;
+        list-style-type: none;
+        transition: all 0.2s;
+    }
+    nav > ul > li > a{
+        color: #aaa;
+        display: block;
+        line-height: 2em;
+        padding: 0.5em 2em;
+        text-decoration: none;
+    }
+    /*Sub Segundo Nivel*/
+    nav li > ul{
+        display : none;
+        margin-top:1px;
+        background-color: #bbb;
+    }
+    nav li >ul li{
+        display: block;
+    }
+    nav li > ul li a {
+        color: #111;
+        display: block;
+        line-height: 2em;
+        padding: 0.5em 2em;
+        text-decoration: none;
+    }
+    nav li:hover {
+        background-color: #666;
+    }
+    nav li:hover > ul{
+        position:absolute;
+        display : block;
+    }
+/*Footer*/
+footer{
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+    font-size: 105%;
+    position: fixed;
+    text-align: center;
+    background-color: gray;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+footer p{
+    padding-top: 5px;
+}
+footer a:hover{
+    color: white;
 }
 /*Geral*/
 *{
     margin: 0;
     padding: 0;
-    font-family: monospace;
     font-size: 15px;
 }
 body{
-    width: 90%;
+    font-family: "Lucida Grande", "Helvetica Nueue", Arial, sans-serif;
+    /*font-family: monospace;*/
     margin: 0 auto;
 }
+/*
 fieldset.fielsetIndex{
     width: 70%;
     background-color: rgba(0,0,0,0.2);
@@ -51,19 +126,4 @@ fieldset>section.enviar{
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-footer{
-    width: 90%;
-    height: 20px;
-    bottom: 0;
-    position: fixed;
-    text-align: center;
-    background-color: gray;
-    color: black;
-}
-footer p a{
-    text-decoration: none;
-    color: inherit;
-}
-footer p a:hover{
-    color:rgba(0,0,0,0.2);
-}
+*/
