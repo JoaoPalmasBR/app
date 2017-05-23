@@ -22,12 +22,13 @@
     <ul>
         <li>
 			<a href="http://localhost/app/">Inicio</a>
+			<!--
 			<ul>
 				<li><a href="presentation.html">presentation</a></li>
 				<li><a href="contact.html">contact</a></li>
 			</ul>
+			-->
 		</li>
         <li><a href="http://localhost/app/login">Login</a></li>
-        <li><a href="http://localhost/app/">News</a></li>
     </ul>
 </nav>
