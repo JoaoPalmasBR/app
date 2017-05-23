@@ -1,3 +1,25 @@
+<?php
+    if (session_id()!=null){
+		echo "diferente de null";
+		echo "<br>";
+		session_destroy();
+		print("SESSION ID:".session_id());
+		echo "<br>";
+		session_start();
+		session_regenerate_id();
+		print("SESSION ID:".session_id());
+		echo "<br>";
+	}
+	else{
+		echo "igual a null";
+		echo "<br>";
+		print("SESSION ID:".session_id());
+		echo "<br>";
+		session_start();
+		print("SESSION ID:".session_id());
+		echo "<br>";
+	}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -5,7 +27,7 @@
             @import url('https://fonts.googleapis.com/css?family=Poppins');
             /* BASIC */
             html {
-                background-color: gray;
+                background-color: whitesmoke;
             }
             body {
                 font-family: "Poppins", sans-serif;
@@ -256,8 +278,7 @@
                     <input type="text" id="usuario" class="fadeIn second" name="usuario" placeholder="Usuario">
                     <input type="text" id="senha" class="fadeIn third" name="senha" placeholder="Senha">
                     <input type="submit" class="fadeIn fourth" value="ENTRA">
-                </form>   
-
+                </form>
             </div>
         </div>
     </body>
