@@ -27,7 +27,7 @@
 				<li><a href="contact.html">contact</a></li>
 			</ul>
 		</li>
-        <li><a href="http://localhost/app/">Blog</a></li>
+        <li><a href="http://localhost/app/login">Login</a></li>
         <li><a href="http://localhost/app/">News</a></li>
     </ul>
 </nav>

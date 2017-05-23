@@ -8,6 +8,7 @@
 		<meta name="description" content="Sistema de Login.">
 		<meta name="author" content="Joao Antonio Santos">
 		<link rel="shortcut icon" href="img/logo.png" type="image/png">
-	</head>';
+	</head>
+	<body>';
 	include 'menu.php';
 ?>
