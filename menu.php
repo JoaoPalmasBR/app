@@ -18,7 +18,7 @@
 	}
 	else{
 		echo '<li><a href="';include 'servidor.php';echo '">Inicio</a></li>';
-		echo '<li><a href="';include 'servidor.php';echo 'login">Login</a></li>';
+		echo '<li><a href="';include 'servidor.php';echo 'login.php">Login</a></li>';
 	}
 	echo 
 		'	</ul>

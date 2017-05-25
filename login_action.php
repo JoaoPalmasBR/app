@@ -14,5 +14,9 @@
     
     //echo 'Login {Usuario: '.$login->usuario.', Senha: '.$login->senha.', Id_Session:'.$login->id_sessao.'}';
     //print("SESSION ID:".session_id());
-    header ('location: http://localhost/app/');
+    if($_SERVER['SERVER_NAME']=="localhost"){
+        header ('location: http://localhost/app');
+    }else{
+        header ('location: http://joaoantoniosantos.com.br/app/');
+    }
 ?>
