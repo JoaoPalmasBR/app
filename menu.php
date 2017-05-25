@@ -3,7 +3,7 @@
 		'<nav>
 			<ul>
 				';
-	if (session_id()!=null){
+	if ($_SESSION['status']==1){
 		echo '<li><a href="';include 'servidor.php';echo '">Inicio</a></li>';
 		echo 
 			'<li>

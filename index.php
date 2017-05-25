@@ -1,14 +1,10 @@
 <?php
-	if (session_id()!=null){
-		echo "diferente de null";
-	}
-	else{
-		echo "igual a null";
-		echo "<br>";
-		//session_start();
-		//session_regenerate_id();
-	}
-	print("SESSION ID:".session_id());
+	session_start();
+    if ($_SESSION['status']==1){
+        echo "logado";
+    }else{
+        echo "nao logado";
+        }
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

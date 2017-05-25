@@ -1,24 +1,10 @@
 <?php
-    if (session_id()!=null){
-		echo "diferente de null";
-		echo "<br>";
-		session_destroy();
-		print("SESSION ID:".session_id());
-		echo "<br>";
-		session_start();
-		session_regenerate_id();
-		print("SESSION ID:".session_id());
-		echo "<br>";
-	}
-	else{
-		echo "igual a null";
-		echo "<br>";
-		print("SESSION ID:".session_id());
-		echo "<br>";
-		//session_start();
-		//print("SESSION ID:".session_id());
-		//echo "<br>";
-	}
+    session_start();
+    if ($_SESSION['status']==1){
+        echo "logado";
+    }else{
+        echo "nao logado";
+    }
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -302,7 +288,7 @@
                 </div>
                 <!-- Login Form -->
                 <form method="POST" action="login_action.php">
-                    <input type="text" id="usuario" class="fadeIn second" name="usuario" placeholder="Usuario">
+                    <input type="text" id="usuario" class="fadeIn second" name="usuario" placeholder="Usuario" autofocus="autofocus">
                     <input type="password" id="senha" class="fadeIn third" name="senha" placeholder="Senha">
                     <input type="submit" class="fadeIn fourth" value="ENTRA">
                 </form>

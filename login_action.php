@@ -1,28 +1,18 @@
 <?php
-    class Login{
-        public $usuario;
-        public $senha;
-        public $id_sessao;
-    }
+    session_start();
     $usuario=$_POST['usuario'];
     $senha=$_POST['senha'];
 
-    session_start();
     $_SESSION['usuario']=$usuario;
     $_SESSION['senha']=$senha;
+    $_SESSION['status']=1;
     
-    echo "post usuario: ".$usuario."<br>";
-    echo "post senha: ".$senha."<br>";
-    echo "session usuario: ".$_SESSION['usuario']."<br>";
-    echo "session senha: ".$_SESSION['senha']."<br>";
-
-    session_regenerate_id();
-    $login=new Login();
-    $login->usuario=$usuario;
-    $login->senha=$senha;
-    $login->id_sessao=session_id();
-    $_SESSION['login']=$login;
-    $_SESSION['id_sessao']=$id_sessao;
-
-    echo 'Login {Usuario: '.$login->usuario.', Senha: '.$login->senha.', Id_Session:'.$login->id_sessao.'}';
+    //echo "post usuario: ".$usuario."<br>";
+    //echo "post senha: ".$senha."<br>";
+    //echo "session usuario: ".$_SESSION['usuario']."<br>";
+    //echo "session senha: ".$_SESSION['senha']."<br>";
+    
+    //echo 'Login {Usuario: '.$login->usuario.', Senha: '.$login->senha.', Id_Session:'.$login->id_sessao.'}';
+    //print("SESSION ID:".session_id());
+    header ('location: http://localhost/app/');
 ?>

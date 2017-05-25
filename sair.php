@@ -1,11 +1,11 @@
 <?php
-    //session_start();
-    //session_regenerate_id();
-    unset($_SESSION['login']);
-    unset($_SESSION['usuario']);
-    unset($_SESSION['senha']);
-    unset($_SESSION['id_sessao']);
-    session_destroy();
-    //variaveis $_SESSION[''];
-    header ('location: http://localhost/app/');
+    session_start();
+    $_SESSION['status']=0;
+    $_SESSION['usuario']=null;
+    $_SESSION['senha']=null;
+    if($_SERVER['SERVER_NAME']=="localhost"){
+        header ('location: http://localhost/app');
+    }else{
+        header ('location: http://joaoantoniosantos.com.br/app/');
+    }
 ?>

@@ -3,6 +3,6 @@
         echo "http://localhost/app/";
     }
     else{
-        echo "http://app.joaoantoniosantos.com.br/";
+        echo "http://joaoantoniosantos.com.br/app/";
     }
 ?>
