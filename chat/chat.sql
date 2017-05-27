@@ -16,6 +16,7 @@ CREATE TABLE usuario(
     primary key(id)
 );
 */
+use app;
 select * from usuario;
 select * from chat_mensagem;
 insert into usuario (usuario, senha, apelido) values ('joao','joao','joao'),('ana','ana','ana');
